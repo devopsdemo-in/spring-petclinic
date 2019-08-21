@@ -106,6 +106,39 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
+    
+<distributionManagement>
+            <repository>
+              <id>nexus</id>
+              <name>Sushant Releases Nexus Repository</name>
+                <url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-release/</url>
+            </repository>
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>Sushant Snapshot Nexus Repository </name>
+              <url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-snapshot/</url>
+            </snapshotRepository>
+</distributionManagement>
+        <repositories>
+	        <repository>
+                	<id>proxy</id>
+                	<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Proxy/</url>
+        	</repository>
+       		<repository>
+                	<id>nexus</id>
+               		<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-release/</url>
+        	</repository>
+        	<repository>
+                	<id>nexus</id>
+                	<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-snapshot/</url>
+        	</repository>
+  	</repositories> 
+  	<pluginRepositories>
+		<pluginRepository>
+                	<id>proxy</id>
+                	<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Proxy/</url>
+        	</pluginRepository>
+ 	</pluginRepositories>
 
   <build>
     <plugins>
