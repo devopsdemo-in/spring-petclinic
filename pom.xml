@@ -129,7 +129,7 @@
                		<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-release/</url>
         	</repository>
         	<repository>
-                	<id>nexus</id>
+                	<id>snapshot</id>
                 	<url>http://ec2-13-233-87-48.ap-south-1.compute.amazonaws.com:8081/repository/Test-project-snapshot/</url>
         	</repository>
   	</repositories> 
